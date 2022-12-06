@@ -8,6 +8,15 @@ import { Punctuality } from "../components/Punctuality/Punctuality";
 import { Ratings } from "../components/Ratings/Ratings";
 import { GeneralStats } from "../components/GeneralStats/GeneralStats";
 
+/**
+ * @description Creates the view for Metrics page, which renders 4 tabs with different components being called inside each one.
+ * @since 09.28.22 by Paola Sanchez
+ * @author Paola Sanchez
+ * @requires Punctuality
+ * @requires Ratings
+ * @requires GeneralStats
+ * @requires Queue
+ */
 export const Home = () => {
     
   // List of workers
@@ -19,10 +28,10 @@ export const Home = () => {
   // Return -----------------------------------------------------------------------------------------------------------------------------------
 
   return (
-    <div className="mx-3 my-4">
+    <div className="py-4 px-5">
       {/* Title of the Page*/}
       <div className="mb-3">
-        <h1>Metrics</h1>
+        <h1><strong>Metrics</strong></h1>
       </div>
 
       <div className="row d-flex flex-column">
@@ -88,7 +97,7 @@ export const Home = () => {
             className="tab-pane fade"
             id="nav-general-stats"
             role="tabpanel"
-            tabindex="0"
+            tabIndex="0"
             aria-labelledby="nav-general-stats-tab"
           >
             <GeneralStats workers={workersList} shifts={shiftsList} />
@@ -100,7 +109,7 @@ export const Home = () => {
             className="tab-pane fade"
             id="nav-punctuality"
             role="tabpanel"
-            tabindex="0"
+            tabIndex="0"
             aria-labelledby="nav-punctuality-tab"
           >
             <Punctuality shifts={shiftsList} />
@@ -112,7 +121,7 @@ export const Home = () => {
             className="tab-pane fade"
             id="nav-ratings"
             role="tabpanel"
-            tabindex="0"
+            tabIndex="0"
             aria-labelledby="nav-ratings-tab"
           >
             <Ratings workers={workersList} />
@@ -124,7 +133,7 @@ export const Home = () => {
             className="tab-pane fade show active"
             id="nav-queue"
             role="tabpanel"
-            tabindex="0"
+            tabIndex="0"
             aria-labelledby="nav-queue-tab"
           >
             <Queue workers={workersList} shifts={shiftsList} />

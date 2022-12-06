@@ -2,8 +2,15 @@ import React from "react";
 import moment from "moment";
 import Photo from "../../assets/images/user.png";
 
+/**
+ * @function
+ * @description Creates a table of all employees with their worked/scheduled hours for Queue.js
+ * @since 09.29.22 by Paola Sanchez
+ * @author Paola Sanchez
+ * @requires moment
+ * @param {object} props - Contains an array of all shifts, and an object with information of a single worker, previously mapped in Queue.js
+ */
 export const QueueData = (props) => {
-
   //Assigning props to variables ----------------------------
 
   // This is a single worker brought from the mapping
@@ -68,7 +75,7 @@ export const QueueData = (props) => {
   }, 0);
 
   // Formatting the total to 2 decimal places
-  let totalScheduledHoursF = totalScheduledHours.toFixed(2);
+  let totalScheduledHoursF = totalScheduledHours.toFixed(2)
 
   // Worked Hours ----------------------------------------
 
@@ -95,7 +102,7 @@ export const QueueData = (props) => {
   }, 0);
 
   // Formatting the total to 2 decimal places
-  let totalWorkedHoursF = totalWorkedHours.toFixed(2);
+  let totalWorkedHoursF = totalWorkedHours.toFixed(2)
 
   // Return ------------------------------------------------------------------------------------------------------
 
@@ -103,7 +110,7 @@ export const QueueData = (props) => {
     <div className="row d-flex border d-inline-flex justify-content-between py-4 w-100">
       {/* Employee Image/Name/Rating Starts */}
       <div className="col p-0 d-flex justify-content-start">
-        <div className="my-auto me-3 ms-2" style={{ width: "3rem" }}>
+        <div className="my-auto me-3 ms-4" style={{ width: "3rem" }}>
           <img src={Photo} className="img-fluid" alt="User profile icon" />
         </div>
         <div className="text-start my-auto d-flex flex-column">
@@ -115,8 +122,8 @@ export const QueueData = (props) => {
             {worker.rating == null
               ? "No rating available"
               : worker.rating > 1
-              ? `Rating: ${worker.rating} stars`
-              : `Rating: ${worker.rating} star`}
+                ? `Rating: ${worker.rating} stars`
+                : `Rating: ${worker.rating} star`}
           </h6>
         </div>
       </div>

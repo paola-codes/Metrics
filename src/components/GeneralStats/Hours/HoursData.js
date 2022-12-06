@@ -1,10 +1,18 @@
 import moment from "moment";
 
+/**
+ * @function
+ * @description Takes in list a of shifts and generates data of all the hours trends for Hours.js.
+ * @since 09.29.22 by Paola Sanchez
+ * @author Paola Sanchez
+ * @requires moment
+ * @param {object} props - Contains an array of all the shifts.
+ */
 export const HoursDataGenerator = (props) => {
-    
-  // Assigning props to variable
-  let shifts = props;
 
+  // Assigning props to variable
+  let shifts = props
+  
   // 1st - Separation of shifts ----------------------------------------------------------
 
   // Array for shifts with multiple clock-ins
@@ -13,7 +21,7 @@ export const HoursDataGenerator = (props) => {
   // Array for single clock-ins made by single workers
   let singleClockInSingleWorker = [];
 
-  // Gathering both clock-ins and clock-outs in a formatted
+  // Gathering both clock-ins and clock-outs in a formatted 
   // way to keep at the useful data handy at all times.
   shifts.forEach((shift) => {
     if (shift.clockin.length > 1) {
@@ -94,7 +102,7 @@ export const HoursDataGenerator = (props) => {
   // Array for polished version of 'singleClockinsMultipleWorkers'
   let SCIMWPolished = [];
 
-  // Adding shifts to 'SCIMWPolished' in a formatted
+  // Adding shifts to 'SCIMWPolished' in a formatted 
   // way to keep at the useful data handy at all times.
   shifts.forEach((originalShift) => {
     singleClockinsMultipleWorkers.forEach((filteredShift) => {
