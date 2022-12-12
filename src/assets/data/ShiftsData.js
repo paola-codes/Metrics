@@ -1,3 +1,7 @@
+import moment from "moment";
+
+let today = moment().format("YYYY-MM-DD")
+
 export const ShiftsData = [
   {
     id: 1,
@@ -5,36 +9,36 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T09:00:00Z",
-        ended_at: "2022-12-06T15:00:00Z",
+        started_at: `${today}T09:00:00Z`,
+        ended_at: `${today}T15:00:00Z`,
         automatically_closed: false,
         employee: 5,
         shift: 1
       },
       {
-        started_at: "2022-12-06T15:00:00Z",
-        ended_at: "2022-12-06T20:10:00Z",
+        started_at: `${today}T15:00:00Z`,
+        ended_at: `${today}T20:10:00Z`,
         automatically_closed: false,
         employee: 5,
         shift: 1
       },
       {
-        started_at: "2022-12-06T10:05:00Z",
-        ended_at: "2022-12-06T15:00:00Z",
+        started_at: `${today}T10:05:00Z`,
+        ended_at: `${today}T15:00:00Z`,
         automatically_closed: false,
         employee: 4,
         shift: 1
       },
       {
-        started_at: "2022-12-06T15:00:00Z",
-        ended_at: "2022-12-06T20:15:00Z",
+        started_at: `${today}T15:00:00Z`,
+        ended_at: `${today}T20:15:00Z`,
         automatically_closed: false,
         employee: 4,
         shift: 1
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 2,
@@ -42,22 +46,22 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T09:30:09Z",
-        ended_at: "2022-12-06T13:00:00Z",
+        started_at: `${today}T09:30:09Z`,
+        ended_at: `${today}T13:00:00Z`,
         automatically_closed: false,
         employee: 5,
         shift: 2
       },
       {
-        started_at: "2022-12-06T13:00:00Z",
-        ended_at: "2022-12-06T20:25:00Z",
+        started_at: `${today}T13:00:00Z`,
+        ended_at: `${today}T20:25:00Z`,
         automatically_closed: false,
         employee: 5,
         shift: 2
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 3,
@@ -65,29 +69,29 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T09:00:00Z",
-        ended_at: "2022-12-06T12:07:00Z",
+        started_at: `${today}T09:00:00Z`,
+        ended_at: `${today}T12:07:00Z`,
         automatically_closed: false,
         employee: 4,
         shift: 3
       },
       {
-        started_at: "2022-12-06T12:20:00Z",
-        ended_at: "2022-12-06T17:00:00Z",
+        started_at: `${today}T12:20:00Z`,
+        ended_at: `${today}T17:00:00Z`,
         automatically_closed: false,
         employee: 4,
         shift: 3
       },
       {
-        started_at: "2022-12-06T17:00:00Z",
-        ended_at: "2022-12-06T20:20:00Z",
+        started_at: `${today}T17:00:00Z`,
+        ended_at: `${today}T20:20:00Z`,
         automatically_closed: false,
         employee: 4,
         shift: 3
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 4,
@@ -95,29 +99,29 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T09:10:09Z",
-        ended_at: "2022-12-06T15:30:09Z",
+        started_at: `${today}T09:10:09Z`,
+        ended_at: `${today}T15:30:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 4
       },
       {
-        started_at: "2022-12-06T15:42:09Z",
-        ended_at: "2022-12-06T18:00:09Z",
+        started_at: `${today}T15:42:09Z`,
+        ended_at: `${today}T18:00:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 4
       },
       {
-        started_at: "2022-12-06T18:30:09Z",
-        ended_at: "2022-12-06T20:31:09Z",
+        started_at: `${today}T18:30:09Z`,
+        ended_at: `${today}T20:31:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 4
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 5,
@@ -125,15 +129,15 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T10:00:09Z",
-        ended_at: "2022-12-06T20:19:09Z",
+        started_at: `${today}T10:00:09Z`,
+        ended_at: `${today}T20:19:09Z`,
         automatically_closed: true,
         employee: 4,
         shift: 5
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 6,
@@ -141,15 +145,15 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T10:40:09Z",
-        ended_at: "2022-12-06T19:25:09Z",
+        started_at: `${today}T10:40:09Z`,
+        ended_at: `${today}T19:25:09Z`,
         automatically_closed: false,
         employee: 4,
         shift: 6
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 7,
@@ -157,22 +161,22 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T09:10:09Z",
-        ended_at: "2022-12-06T14:10:09Z",
+        started_at: `${today}T09:10:09Z`,
+        ended_at: `${today}T14:10:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 7
       },
       {
-        started_at: "2022-12-06T14:28:09Z",
-        ended_at: "2022-12-06T19:20:09Z",
+        started_at: `${today}T14:28:09Z`,
+        ended_at: `${today}T19:20:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 7
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 8,
@@ -180,22 +184,22 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T10:14:09Z",
-        ended_at: "2022-12-06T16:30:09Z",
+        started_at: `${today}T10:14:09Z`,
+        ended_at: `${today}T16:30:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 8
       },
       {
-        started_at: "2022-12-06T17:00:09Z",
-        ended_at: "2022-12-06T21:35:09Z",
+        started_at: `${today}T17:00:09Z`,
+        ended_at: `${today}T21:35:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 8
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 9,
@@ -203,22 +207,22 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T10:08:09Z",
-        ended_at: "2022-12-06T15:00:09Z",
+        started_at: `${today}T10:08:09Z`,
+        ended_at: `${today}T15:00:09Z`,
         automatically_closed: false,
         employee: 4,
         shift: 9
       },
       {
-        started_at: "2022-12-06T15:36:09Z",
-        ended_at: "2022-12-06T20:00:09Z",
+        started_at: `${today}T15:36:09Z`,
+        ended_at: `${today}T20:00:09Z`,
         automatically_closed: false,
         employee: 4,
         shift: 9
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 10,
@@ -226,22 +230,22 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T10:10:09Z",
-        ended_at: "2022-12-06T14:00:09Z",
+        started_at: `${today}T10:10:09Z`,
+        ended_at: `${today}T14:00:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 10
       },
       {
-        started_at: "2022-12-06T14:40:09Z",
-        ended_at: "2022-12-06T20:40:09Z",
+        started_at: `${today}T14:40:09Z`,
+        ended_at: `${today}T20:40:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 10
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 11,
@@ -249,22 +253,22 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T08:00:09Z",
-        ended_at: "2022-12-06T13:00:09Z",
+        started_at: `${today}T08:00:09Z`,
+        ended_at: `${today}T13:00:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 11
       },
       {
-        started_at: "2022-12-06T13:45:09Z",
-        ended_at: "2022-12-06T20:45:09Z",
+        started_at: `${today}T13:45:09Z`,
+        ended_at: `${today}T20:45:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 11
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 12,
@@ -272,22 +276,22 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T09:10:09Z",
-        ended_at: "2022-12-06T12:00:09Z",
+        started_at: `${today}T09:10:09Z`,
+        ended_at: `${today}T12:00:09Z`,
         automatically_closed: false,
         employee: 4,
         shift: 12
       },
       {
-        started_at: "2022-12-06T12:34:09Z",
-        ended_at: "2022-12-06T20:00:09Z",
+        started_at: `${today}T12:34:09Z`,
+        ended_at: `${today}T20:00:09Z`,
         automatically_closed: false,
         employee: 4,
         shift: 12
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 13,
@@ -295,15 +299,15 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T09:10:09Z",
-        ended_at: "2022-12-06T22:00:09Z",
+        started_at: `${today}T09:10:09Z`,
+        ended_at: `${today}T22:00:09Z`,
         automatically_closed: true,
         employee: 5,
         shift: 13
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T22:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T22:00:00Z`
   },
   {
     id: 14,
@@ -311,22 +315,22 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T09:10:09Z",
-        ended_at: "2022-12-06T22:00:09Z",
+        started_at: `${today}T09:10:09Z`,
+        ended_at: `${today}T22:00:09Z`,
         automatically_closed: false,
         employee: 4,
         shift: 14
       },
       {
-        started_at: "2022-12-06T09:10:09Z",
-        ended_at: "2022-12-06T22:00:09Z",
+        started_at: `${today}T09:10:09Z`,
+        ended_at: `${today}T22:00:09Z`,
         automatically_closed: true,
         employee: 5,
         shift: 14
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T20:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T20:00:00Z`
   },
   {
     id: 15,
@@ -334,22 +338,22 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T10:10:09Z",
-        ended_at: "2022-12-06T12:00:09Z",
+        started_at: `${today}T10:10:09Z`,
+        ended_at: `${today}T12:00:09Z`,
         automatically_closed: false,
         employee: 4,
         shift: 15
       },
       {
-        started_at: "2022-12-06T12:30:09Z",
-        ended_at: "2022-12-06T22:00:09Z",
+        started_at: `${today}T12:30:09Z`,
+        ended_at: `${today}T22:00:09Z`,
         automatically_closed: true,
         employee: 4,
         shift: 15
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T22:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T22:00:00Z`
   },
   {
     id: 16,
@@ -357,22 +361,22 @@ export const ShiftsData = [
     status: "COMPLETED",
     clockin: [
       {
-        started_at: "2022-12-06T10:05:09Z",
-        ended_at: "2022-12-06T12:00:09Z",
+        started_at: `${today}T10:05:09Z`,
+        ended_at: `${today}T12:00:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 16
       },
       {
-        started_at: "2022-12-06T12:30:09Z",
-        ended_at: "2022-12-06T22:00:09Z",
+        started_at: `${today}T12:30:09Z`,
+        ended_at: `${today}T22:00:09Z`,
         automatically_closed: false,
         employee: 5,
         shift: 16
       }
     ],
-    starting_at: "2022-12-06T10:00:00Z",
-    ending_at: "2022-12-06T22:00:00Z"
+    starting_at: `${today}T10:00:00Z`,
+    ending_at: `${today}T22:00:00Z`
   },
   {
     id: 17,
